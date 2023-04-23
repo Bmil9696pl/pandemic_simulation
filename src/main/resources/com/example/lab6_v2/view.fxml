@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+
+<BorderPane prefHeight="450.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lab6_v2.Controller">
+   <center>
+      <Pane fx:id="mainPanel" prefHeight="400.0" prefWidth="400.0" BorderPane.alignment="CENTER" />
+   </center>
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="26.0" prefWidth="146.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#moveClick" prefHeight="26.0" prefWidth="54.0" text="move" />
+            <Button fx:id="Button" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#ButtonClick" text="OK" />
+            <Button mnemonicParsing="false" onAction="#loadClick" text="load" />
+            <TextField fx:id="loadTextField" prefHeight="26.0" prefWidth="99.0" />
+            <Label fx:id="savesLabel" prefHeight="18.0" prefWidth="66.0" text="0" />
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>
